@@ -50,7 +50,7 @@ class Entity extends EventDispatcher {
 		super();
 		applyProperties( this );
 
-		data = merge( {}, this.constructor.defaultData, data );
+		data = merge( this.constructor.defaultData, data );
 
 		this.id = data.id || this.constructor.nextId();
 		if ( entities[ this.id ] ) {
@@ -119,7 +119,9 @@ class Entity extends EventDispatcher {
 
 	onComponentUpdated( event ) {
 
-		this.dispatchEvent( "updated", event );
+		const { target, field, ...newEvent } = event;
+		newEvent.field = `${event.target.fieldName}.${field}`;
+		this.dispatchEvent( "updated", newEvent );
 
 	}
 

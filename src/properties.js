@@ -14,6 +14,8 @@ export const defineProperty = ( obj, prop ) => {
 	Object.defineProperty( obj, prop, {
 		set: newValue => {
 
+			if ( newValue === value ) return;
+
 			const prevValue = value;
 			value = newValue;
 

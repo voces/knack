@@ -13,7 +13,7 @@ function process( index ) {
 	const arr = object._listeners[ type ];
 	if ( arr !== undefined && arr.length > 0 ) {
 
-		const clone = [ ...arr ];
+		const clone = Array.from( arr );
 
 		for ( let i = 0; i < clone.length; i ++ )
 			clone[ i ].call( object, event, ...args );
@@ -82,8 +82,6 @@ export default class EventDispatcher {
 	}
 
 	dispatchEvent( type, event = {}, ...args ) {
-
-		// console.log( this.constructor.name, "dispatchEvent", type, event, ...args );
 
 		if ( ! type ) throw new Error( "Must provide a type to `dispatchEvent`" );
 

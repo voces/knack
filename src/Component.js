@@ -20,6 +20,12 @@ class Component extends EventDispatcher {
 
 	}
 
+	get fieldName() {
+
+		return this.constructor.name[ 0 ].toLowerCase() + this.constructor.name.slice( 1 );
+
+	}
+
 }
 
 export default Component;

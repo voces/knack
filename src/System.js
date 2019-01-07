@@ -1,12 +1,20 @@
 
 import EventDispatcher from "./EventDispatcher.js";
+import applyProperties, { properties } from "./properties.js";
 
 class System extends EventDispatcher {
+
+	static get properties() {
+
+		return properties( "app" );
+
+	}
 
 	constructor() {
 
 		super();
 
+		applyProperties( this );
 		this.entities = [];
 
 	}
