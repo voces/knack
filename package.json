@@ -1,6 +1,6 @@
 {
   "name": "knack-ecs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A tiny Entity-Component-System (ECS).",
   "main": "index.js",
   "module": "main.js",

@@ -2,7 +2,7 @@
 import EventDispatcher from "./EventDispatcher.js";
 import applyProperties, { properties } from "./properties.js";
 
-class System extends EventDispatcher {
+export default class System extends EventDispatcher {
 
 	static get properties() {
 
@@ -13,8 +13,8 @@ class System extends EventDispatcher {
 	constructor() {
 
 		super();
-
 		applyProperties( this );
+
 		this.entities = [];
 
 	}
@@ -45,5 +45,3 @@ class System extends EventDispatcher {
 	}
 
 }
-
-export default System;

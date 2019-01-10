@@ -70,7 +70,7 @@ export default () => describe( "EventDispatcher", function () {
 		it( "works", done => {
 
 			const ed = new EventDispatcher();
-			ed.addEventListener( "test", done );
+			ed.addEventListener( "test", () => done() );
 
 			ed.dispatchEvent( "test" );
 

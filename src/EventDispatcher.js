@@ -58,6 +58,19 @@ export default class EventDispatcher {
 
 	}
 
+	listenOnce( type, listener ) {
+
+		const maskedListener = ( ...args ) => {
+
+			this.removeEventListener( type, maskedListener );
+			listener( ...args );
+
+		};
+
+		this.addEventListener( type, maskedListener );
+
+	}
+
 	hasEventListener( type, listener ) {
 
 		return this._listeners[ type ] !== undefined &&
