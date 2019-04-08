@@ -1,6 +1,6 @@
 {
   "name": "knack-ecs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A tiny Entity-Component-System (ECS).",
   "main": "index.mjs",
   "module": "main.mjs",
@@ -17,7 +17,6 @@
     "verit-test": "^1.0.0"
   },
   "files": [
-    "src",
-    "main.js"
+    "src"
   ]
 }
