@@ -1,6 +1,6 @@
 
-import EventDispatcher from "./EventDispatcher.js";
-import applyProperties, { properties } from "./properties.js";
+import EventDispatcher from "./EventDispatcher.mjs";
+import applyProperties, { properties } from "./properties.mjs";
 
 export default class System extends EventDispatcher {
 

@@ -1,9 +1,9 @@
 
-import EventDispatcher from "./EventDispatcher.js";
+import EventDispatcher from "./EventDispatcher.mjs";
 
-import { merge } from "./util.js";
-import applyProperties, { properties } from "./properties.js";
-import Component from "./Component.js";
+import { merge } from "./util.mjs";
+import applyProperties, { properties } from "./properties.mjs";
+import Component from "./Component.mjs";
 
 const nextId = () => ++ nextId._id;
 nextId._id = 0;

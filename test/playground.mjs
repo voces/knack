@@ -1,8 +1,8 @@
 
-import App from "../src/App.js";
-import Component from "../src/Component.js";
-import Entity from "../src/Entity.js";
-// import System from "../src/System.js";
+import App from "../src/App.mjs";
+import Component from "../src/Component.mjs";
+import Entity from "../src/Entity.mjs";
+// import System from "../src/System.mjs";
 
 class ComponentA extends Component {
 

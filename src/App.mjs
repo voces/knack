@@ -1,5 +1,5 @@
 
-import EventDispatcher from "./EventDispatcher.js";
+import EventDispatcher from "./EventDispatcher.mjs";
 
 const dirtyEvents = "componentAdded componentRemoved updated";
 

@@ -1,8 +1,8 @@
 
 import assert from "assert";
-import EventDispatcher from "../../src/EventDispatcher.js";
+import EventDispatcher from "../../src/EventDispatcher.mjs";
 
-export default () => describe( "EventDispatcher", function () {
+export default describe( "EventDispatcher", function () {
 
 	this.timeout( 10 );
 

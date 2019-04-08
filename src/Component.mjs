@@ -1,7 +1,7 @@
 
-import EventDispatcher from "./EventDispatcher.js";
-import applyProperties from "./properties.js";
-import { merge } from "./util.js";
+import EventDispatcher from "./EventDispatcher.mjs";
+import applyProperties from "./properties.mjs";
+import { merge } from "./util.mjs";
 
 class Component extends EventDispatcher {
 
